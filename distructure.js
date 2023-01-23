@@ -1,3 +1,4 @@
+
 //program 1
 let names = ['monika', 'shital', 'pratiksha', 'rutuja', 'snehal']
 let [a0, a1, a2, a3, a4] = names

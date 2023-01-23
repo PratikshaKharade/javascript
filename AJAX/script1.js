@@ -86,20 +86,61 @@
 
 //with catch and finally
 
-let pro = new Promise(function (resolve, reject) {
-    let a = 10
-    let b = 10
-    if (a == b) {
-        resolve('equal')
-    }
-    else {
-        reject('not equal')
-    }
-})
-pro.then(function (a) {
-    console.log(a)
-})
-    .catch(function (b) {
+//let pro = new Promise(function (resolve, reject) {
+//     let a = 10
+//     let b = 111
+//     if (a == b) {
+//         resolve('equal')
+//     }
+//     else {
+//         reject('not equal')
+//     }
+// })
+// pro.then(function (a) {
+//     console.log(a)
+// })
+//     .catch(function (b) {
+//         console.log(b)
+//     })
+//     .finally(function(){
+//         console.log('finally')
+    // })
+
+    //
+    let pro = new Promise (function(resolve,reject){
+        a = 10
+        b = 111
+
+        if(a==b){
+            resolve('equal')
+        }
+        else {
+            reject('not equal')
+        }
+    })
+    pro.then(function(str){
+        console.log(str)
+
+    },function(str){
+        console.log(str)
+    })
+
+    //
+    let pro1 = new Promise(function(resolve,reject){
+        m = 30
+        p = 30
+
+        if(m == p){
+            resolve('equal')
+        }
+        else {
+            reject('not equal')
+        }
+    })
+    .then(function(a){
+        console.log(a)
+    })
+    .catch(function(b){
         console.log(b)
     })
     .finally(function(){

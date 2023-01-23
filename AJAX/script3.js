@@ -1,27 +1,27 @@
 //
-function getUserpAgewise(page){
-    return fetch(`https://reqres.in/api/users?page=${page}`)
-    .then(function(res){
-        //console.log(res)
-        return res.json()
-        .then(function(res){
-            return res
-        })
-    })
+// function getUserpAgewise(page){
+//     return fetch(`https://reqres.in/api/users?page=${page}`)
+//     .then(function(res){
+//         //console.log(res)
+//         return res.json()
+//         .then(function(res){
+//             return res
+//         })
+//     })
 
-}
-//getUserpAgewise(2)
+// }
+// //getUserpAgewise(2)
 
-function getSingleUser(id){
-    return fetch(`https://reqres.in/api/users/${id}`)
-    .then(function(res){
-        //console.log(res)
-        return res.json()
-        .then(function(res){
-            return res
-        })
-    })
-}
+// function getSingleUser(id){
+//     return fetch(`https://reqres.in/api/users/${id}`)
+//     .then(function(res){
+//         //console.log(res)
+//         return res.json()
+//         .then(function(res){
+//             return res
+//         })
+//     })
+// }
 //getSingleUser(7)
 
 // getUserpAgewise(2)
@@ -47,3 +47,42 @@ function getSingleUser(id){
 // })
 
 //
+
+
+function getUserpAgewise(page){
+    return fetch(`https://reqres.in/api/users?page=${page}`)
+    .then(function(res){
+        //console.log(res)
+        return res.json()
+        .then(function(res){
+            //console.log(res)
+            return res
+        })
+
+    })
+}
+//getUserpAgewise(2)
+
+function getSingleUser(id){
+    return fetch(`https://reqres.in/api/users/${id}`)
+    .then(function(res){
+        return res.json()
+        .then(function(res){
+            console.log(res)
+        })
+    })
+}
+//getSingleUser(7)
+
+getUserpAgewise(2)
+.then(function(res){
+    //console.log(res.data[1].id)
+    let id = res.data[1].id
+    return id
+})
+.then(function(i){
+    getSingleUser(i)
+    .then(function(res){
+        console.log(res)
+    })
+})

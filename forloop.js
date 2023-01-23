@@ -40,8 +40,8 @@
 // }
 
 
-let x=[10,20,30,30,84,30,30,38,30]
-let count = 0
+// let x=[10,20,30,30,84,30,30,38,30]
+// let count = 0
 // for(i=0; i<x.length;i++){
 //     if(x[i]==30){
 //         count = count+1
@@ -49,17 +49,44 @@ let count = 0
 // }
 // console.log(count)
 
-let count1 = x.filter(function(el){
-    return el==30
-})
-console.log(count1)
+// let count1 = x.filter(function(el){
+//     return el==30
+// })
+// console.log(count1)
 
-let count3= x.map(function(el){
-    if(el==30){
-        return el
-        //count = count+1
+// let count3= x.map(function(el){
+//     if(el==30){
+//         return el
+//         //count = count+1
+//     } 
+
+// })
+// console.log(count3)
+
+// let sum = 0
+// for(i=0; i<100; i++){
+//     sum = sum + i
+// }
+// console.log(sum)
+
+
+//even no
+// let sum = 0
+// for (i = 0; i < 100; i++) {
+//     if (i % 2 == 0) {
+//         //sum = sum + i
+//         console.log(i)
+//     }
+
+// }
+//console.log(sum)
+
+//sum of even no
+let sum = 0
+for (i = 0; i < 100; i++) {
+    if (i % 2 == 0) {
+        sum = sum + i
+        //console.log(i)
     }
-    
-    
-})
-console.log(count3)
+}
+console.log(sum)

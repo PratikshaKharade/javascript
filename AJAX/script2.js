@@ -149,6 +149,44 @@ CreateUser()
         console.log(str)
     })
 
+//
+
+// function userCreate(){
+//     return new Promise(function(){
+//         setTimeout(() => {
+//             console.log('user cerated')
+//         }, 3000);
+//     })
+// }
+
+// function GetID(){
+//     return new Promise(function(){
+//         setTimeout(() => {
+//             console.log('GET ID')
+//         }, 2000);
+//     })
+// }
+
+// function GETInfo(){
+//     return new Promise(function(){
+//         setTimeout(() => {
+//             console.log('user info')
+//         }, 1000);
+//     })
+// }
+
+// userCreate()
+// .then(function(str){
+//     console.log(str)
+//    return GetID()
+// })
+// .then(function(str){
+//     console.log(str)
+//     return GETInfo()
+// })
+// .then(function(str){
+//     console.log(str)
+// })
 
 
 
